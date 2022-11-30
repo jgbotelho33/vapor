@@ -31,7 +31,7 @@ $lista_jogos = mysqli_query($conn, $query_lista_jogos);
                     <td class="nomeedicao"><a class="link" href="editar-idiomas-jogos.php?id=<?= $lista_jogo['id'] ?>"> Idiomas </a></td>
                     <td class="nomeedicao"><a class="link" href="editar-plataformas-jogos.php?id=<?= $lista_jogo['id'] ?>"> Plataformas </a></td>
                     <td class="nomeedicao"><a class="link" href="editar-jogo.php?id=<?= $lista_jogo['id'] ?>"> Editar </a></td>
-                    <td class="nomedelete"><a class="link" href="excluir-jogo.php?id=<?= $lista_jogo['id'] ?>"> Excluir </a></td>
+                    <td class="nomedelete"><a onclick="excluirJogo(<?=$lista_jogo['id']?>)" href="#">Excluir</a></td>
 
                 </tr>
                

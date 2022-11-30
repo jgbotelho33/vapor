@@ -19,6 +19,7 @@ require('conexao.php');
     <link rel="stylesheet" href="assets/global.css">
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js"></script>
     <title> DashBoard </title>
 
 
