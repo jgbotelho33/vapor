@@ -7,6 +7,13 @@ function excluirJogo(idJogo) {
 
 }
 
+function  removeElementPorID(IDElement) {
+    let element = document.getElementById(IDElement)
+
+    if (element != null)
+    element.remove()
+}
+
 function obterDataHoraAtual() { 
     const data = new Date()
     let horas = data.getHours()
@@ -31,5 +38,14 @@ function obterDataHoraAtual() {
     return dataAtual
 }
 
-function updateClock() {}
+function updateClock() {
+
+    const clock = document.getElementById('clock')
+    clock.innerHTML = obterDataHoraAtual()
+
+    setInterval(function(){
+        clock.innerHTML = obterDataHoraAtual()
+        1000
+    })
+}
 
