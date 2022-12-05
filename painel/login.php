@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require('./modulos/conexao.php');
 
@@ -10,10 +10,10 @@ $query_login_adm = "SELECT nome, id, cpf FROM administrador WHERE email = '{$ema
 
 $login_adm = mysqli_fetch_assoc(mysqli_query($conn, $query_login_adm));
 
-if($login_adm == null) {
+if ($login_adm == null) {
     header('Location: index.php?error=Usuário e/ou senha inválidos');
 } else {
     session_start();
-    $_SESSION['adm'] = $login_adm;
+    $_SESSION['administrador'] = $login_adm;
     header('Location: dashboard.php');
 }
