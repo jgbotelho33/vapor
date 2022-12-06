@@ -14,6 +14,6 @@ if ($login_adm == null) {
     header('Location: index.php?error=Usuário e/ou senha inválidos');
 } else {
     session_start();
-    $_SESSION['administrador'] = $login_adm;
+    $_SESSION['adm'] = $login_adm;
     header('Location: dashboard.php');
 }

@@ -10,8 +10,10 @@ function excluirJogo(idJogo) {
 function  removeElementPorID(IDElement) {
     let element = document.getElementById(IDElement)
 
-    if (element != null)
+    if (element != null) {
     element.remove()
+    }
+
 }
 
 function obterDataHoraAtual() { 
@@ -55,7 +57,8 @@ function cor_random() {
     const b = Math.floor(Math.random() * 256)
     const cores = "rgb(" + r + "," + g + "," + b + ")"
 
-    document.getElementById("sub-menu").style.color = cores
+    document.getElementById("nomesite").style.color = cores
+    document.getElementById("nomeadm").style.color = cores
    
 }
 

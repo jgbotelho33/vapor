@@ -19,7 +19,7 @@ $error_message = $_GET['error'] ?? null;
   <title> Login </title>
 </head>
 
-<body onclick="removeElementPorID("error_message")">
+<body onclick = "removeElementPorID('error_message')">
 
   <section class="boxLogin container">
     <div class="content">
@@ -44,7 +44,7 @@ $error_message = $_GET['error'] ?? null;
           <label id="error_message"><?=$error_message?></label>
         <?php } ?>
 
-        function()
+       
 
 
       </form>
