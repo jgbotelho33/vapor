@@ -33,7 +33,8 @@ require('conexao.php');
             <div id="top-menu">
                 <div id="sub-menu">
                     <div id="nomesite"> DashBoard </div>
-                    <div id="nomeadm">  <b>Olá, Administrador!</b>  </div>
+                    <div id="nomeadm">  <b>Olá, João Gabriel!</b>  </div>
+                    
                 </div>
             </div>
         

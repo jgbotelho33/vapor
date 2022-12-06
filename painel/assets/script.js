@@ -49,3 +49,17 @@ function updateClock() {
     })
 }
 
+function cor_random() {
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+    const cores = "rgb(" + r + "," + g + "," + b + ")"
+
+    document.getElementById("sub-menu").style.color = cores
+   
+}
+
+function iniciando_as_trocas_de_cores() {
+    setInterval(cor_random, 1000)
+}
+
