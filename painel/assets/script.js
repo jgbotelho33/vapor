@@ -62,7 +62,15 @@ function cor_random() {
    
 }
 
-function iniciando_as_trocas_de_cores() {
+function iniciar_mudanca_de_cor() {
     setInterval(cor_random, 1000)
 }
 
+function transformar_texto_maiuscula(element){
+    element.value = element.value.ToUpperCase()
+}
+
+function primeira_letra_maiuscula(element){
+    const valor_do_usuario = element.value
+    element.value = valor_do_usuario[0]. ToUpperCase() + valor_do_usuario.slice(1).toLowerCase()
+}
